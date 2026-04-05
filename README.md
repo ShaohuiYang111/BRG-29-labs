@@ -42,4 +42,29 @@ cd ..
 ![file](images/files.png)
 ![software centre](images/software-centre.png)
 ![basic commands](images/basic-commands.png)
-
+  
+6.Basic commands 2:   
+ps-e : List all running processes onr the system  
+top : Dispaly real time process resource usage  
+ls : List files  
+ls -la : List all files  
+ls -alt : List files sorted by modification time  
+  
+**Outpust are shown in the screenshouts below:**  
+![bc](images/basic-commands1.png)
+![bc](images/basic-commands2.png)
+![bc](images/basic-commands3.png)
+  
+7.File Operations:  
+touch testfile.txt : Create an empty file  
+nano testfile.txt : Open the file  
+cat testfile.txt : Displat the entire file content  
+less testfile.txt : View file content page by page  
+cp testfile.txt copy.txt : Copy the file  
+mv copy.txt moved.txt : rename/move the file  
+rm moved.txt : Delete the file  
+  
+**Output are shown in the screenshouts below:**
+![FO](images/file-operation1.png)
+![FO](images/file-operation2.png)
+![FO](images/file-operation3.png)
