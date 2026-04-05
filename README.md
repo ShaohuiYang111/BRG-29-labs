@@ -22,11 +22,11 @@ Day 1a-2
 
 labs:
 
-1.Check internet using Firefox.
-2.Open LibreOffice and type a document.
-3.Open files.
-4.Install a Software in APP center.
-5.Practice basic commands.
+1.Check internet using Firefox.  
+2.Open LibreOffice and type a document.  
+3.Open files.  
+4.Install a Software in APP center.  
+5.Practice basic commands.  
 pwd
 ls /
 cd /etc
