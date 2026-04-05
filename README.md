@@ -198,9 +198,9 @@ Compilation command: gcc hello_world.c -o hello_world_executable
 Excution : ./hello_world_executable  
 Output : Hello, World!  
 **Screenshots:**
-![CACP](images/complie-the-c-program1.png)
-![CACP](images/complie-the-c-program2.png)
-![CACP](images/complie-the-c-program3.png)
+![CACP](images/compile-the-c-program1.png)
+![CACP](images/compile-the-c-program2.png)
+![CACP](images/compile-the-c-program3.png)
   
 **19.Reflection**
 19.1 Which file editors are best for remote access and why?  
