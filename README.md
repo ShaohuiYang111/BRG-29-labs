@@ -248,7 +248,7 @@ mkdir books
 cd books  
 wget https://www.gutenberg.org/files/84/84-0.txt -O frankenstein.txt  
 cd ..  
-# Create a tar archive : 
+#Create a tar archive : 
   
 tar cf books.tar books  
 ls -lh boks.tar  
@@ -277,5 +277,5 @@ tar -xvf books.tar
 ![SSH](images/enable-ssh1.png)
 ![USER](images/create-a-new-user1.png)
 ![BOOK](images/book1.png)
-![BOOK](images.book2.png)
+![BOOK](images/book2.png)
 
