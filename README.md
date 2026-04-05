@@ -27,16 +27,16 @@ labs:
 3.Open files.  
 4.Install a Software in APP center.  
 5.Practice basic commands.  
-pwd
-ls /
-cd /etc
-cd
-mkdir dir1
-cd dir1
-touch hello world.text
-ls -l
-cd ..
-**The operation screenshot is shown below: **
+pwd  
+ls /  
+cd /etc  
+cd  
+mkdir dir1  
+cd dir1  
+touch hello world.text  
+ls -l  
+cd .. 
+**The operation screenshot is shown below: **  
 ![Firefox](images/firefox.png)
 ![LibreOffice](images/libreoffice-writer.png)
 ![file](images/files.png)
