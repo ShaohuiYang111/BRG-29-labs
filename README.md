@@ -1,6 +1,6 @@
 # BRG-29-labs labs report
 
-Student information
+## Student information
 student name:Shaohui Yang
 Kaplan ID: CT0382031
 Murdoch ID: 35920041
