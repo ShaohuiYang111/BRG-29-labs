@@ -210,3 +210,72 @@ Answer : SaaS requires no installation but depends on internet.Binaries are easy
 19.3 How did using CLI imporve your understanding of linux?
 Answer : CLI gave me direct interaction with the kernel,taught me about file permissions,process management,pipelines,and made me more efficient than GUI.  
 
+## Lab 1b : Lixux Services
+#Update package list : sudo apt update
+  
+#Install apache : sudo install apaches2 -y
+  
+#Tested on web Http : 127.0.0.1
+  
+#Install SSH and Nmap : sudo apt install openssh-servernmap -y
+  
+#Get IP Address : ip a
+  
+#Nmap port Scan : nmap 127.0.0.1 
+Port 80(http) and 22(SSH) are open 
+  
+#Stop and remove Apache to see port 80 disappear : sudo systemctl stop apache2 then sudo apt remove apache2 -y
+#Scan again : nmap 127.0.0.1
+Port 80 is gone
+#Reinstall Apache : sudo apt insatll apache2 -y
+  
+#Modify index.html Page
+sudo nano /var/www/hetl/index.hetm
+  
+Replace content
+  
+save content and then refresh browser at http://127.0.0.1
+  
+#Enabled firwall allowing http ports 80 : sudo ufw enable and sudo ufw allow 80
+  
+#Test SSH login to localhost : ssh lcalhost
+  
+#Creat a new user : sudo addsuer testuser2
+  
+#Creat a directory and download a sample book from Project Gutenberg :
+  
+mkdir books  
+cd books  
+wget https://www.gutenberg.org/files/84/84-0.txt -O frankenstein.txt  
+cd ..  
+# Create a tar archive : 
+  
+tar cf books.tar books  
+ls -lh boks.tar  
+#Compress the tar archive with bzip2 : 
+  
+bzip2 books.tar  
+ls -ls book.tar.bz2  
+#Decompress: first bunzip2, then extract tar : 
+  
+bunzip2 books.tar.bz2  
+tar -xvf books.tar  
+
+**Screenshots:**
+![A](images/install-apache1.png)
+![A](images/install-apache2.png)
+![SSH](images/install-ssh.png)
+![IP](images/ipa1.png)
+![NPC](images/nmap-port-scan1.png)
+![NPC](images/nmap-port-scan2.png)
+![NPC](images/nmap-port-scan3.png)
+![MI](images/modify-index1.png)
+![MI](images/modify-index2.png)
+![CUF](images/configure-ufw-firewall1.png)
+![CUF](images/comfigure-ufw-firewall2.png)
+![CUF](images/comfigure-ufw-firewall3.png)
+![SSH](images/enable-ssh1.png)
+![USER](images/create-a-new-user1.png)
+![BOOK](images/book1.png)
+![BOOK](images.book2.png)
+
