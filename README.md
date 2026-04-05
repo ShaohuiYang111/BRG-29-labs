@@ -5,7 +5,7 @@ student name:Shaohui Yang
 Kaplan ID: CT0382031
 Murdoch ID: 35920041
 
-Day 1a-1
+## Day 1a-1
 
 Install virtualbox on the host machine.
 
@@ -38,8 +38,8 @@ ls -l
 cd ..
 **The operation screenshot is shown below: **
 ![Firefox](images/firefox.png)
-![LibreOffice](images/'libreoffice writer'.png)
+![LibreOffice](images/libreoffice-writer.png)
 ![file](images/files.png)
-![software centre](images/'software centre'.png)
-![basic commands](images/'basic commands'.png)
+![software centre](images/software-centre.png)
+![basic commands](images/basic-commands.png)
 
