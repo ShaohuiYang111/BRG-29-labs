@@ -1,9 +1,9 @@
 # BRG-29-labs labs report
 
 ## Student information
-**Student name:Shaohui Yang**
-**Kaplan ID: CT0382031**
-**Murdoch ID: 35920041**
+**Student name:Shaohui Yang**  
+**Kaplan ID: CT0382031**  
+**Murdoch ID: 35920041**  
 
 ## Day 1a-1
 
