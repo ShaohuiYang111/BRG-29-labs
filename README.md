@@ -18,7 +18,7 @@ HD:20GB
 
 Completed installation and system configuration.
 
-Day 1a-2
+## Day 1a-2
 
 labs:
 
