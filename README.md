@@ -42,5 +42,4 @@ cd ..
 ![file](images/files.png)
 ![software centre](images/softwar-centre.png)
 ![basic commands](images/basic-commands.png)
-![software centre](images/software-centre.png)
-![basic commands](images/basic-commands.png)
+
