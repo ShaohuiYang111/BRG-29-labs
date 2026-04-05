@@ -40,6 +40,6 @@ cd ..
 ![Firefox](images/firefox.png)
 ![LibreOffice](images/libreoffice-writer.png)
 ![file](images/files.png)
-![software centre](images/softwar-centre.png)
+![software centre](images/software-centre.png)
 ![basic commands](images/basic-commands.png)
 
