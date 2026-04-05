@@ -35,8 +35,8 @@ mkdir dir1
 cd dir1  
 touch hello world.text  
 ls -l  
-cd .. 
-**The operation screenshot is shown below: **  
+cd ..  
+**The operation screenshot is shown below:**  
 ![Firefox](images/firefox.png)
 ![LibreOffice](images/libreoffice-writer.png)
 ![file](images/files.png)
