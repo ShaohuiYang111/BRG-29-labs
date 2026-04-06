@@ -593,11 +593,13 @@ tail /home/ubuntu/cron_backup.log
 **Screenshots：**
 ![S](images/server1.png)
 ![S](images/server2.png)
-
-Challenge 1 : Boot-Time Script
-@reboot added to crontab.
-Challenge 2 : neofetch & figlet MOTD
-Login greeting customized.
+  
+Challenge 1 : Boot-Time Script  
+@reboot added to crontab.  
+  
+Challenge 2 : neofetch & figlet MOTD  
+Login greeting customized.  
+  
 **Screenshots:**
 ![C](images/challenge1.png)
 ![C](images/challenge2.png)
