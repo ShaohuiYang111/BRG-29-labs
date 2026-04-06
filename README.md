@@ -227,6 +227,7 @@ Port 80(http) and 22(SSH) are open
 Stop and remove Apache to see port 80 disappear : sudo systemctl stop apache2 then sudo apt remove apache2 -y
 Scan again : nmap 127.0.0.1  
 Port 80 is gone  
+  
 Reinstall Apache : sudo apt insatll apache2 -y  
   
 Modify index.html Page  
@@ -243,21 +244,20 @@ Test SSH login to localhost : ssh lcalhost
 Creat a new user : sudo addsuer testuser2
   
 Creat a directory and download a sample book from Project Gutenberg :
-  
 mkdir books  
 cd books  
 wget https://www.gutenberg.org/files/84/84-0.txt -O frankenstein.txt  
 cd ..  
-Create a tar archive : 
   
+Create a tar archive : 
 tar cf books.tar books  
 ls -lh boks.tar  
-Compress the tar archive with bzip2 : 
   
+Compress the tar archive with bzip2 : 
 bzip2 books.tar  
 ls -ls book.tar.bz2  
-Decompress: first bunzip2, then extract tar : 
   
+Decompress: first bunzip2, then extract tar : 
 bunzip2 books.tar.bz2  
 tar -xvf books.tar  
 
@@ -272,8 +272,6 @@ tar -xvf books.tar
 ![MI](images/modify-index1.png)
 ![MI](images/modify-index2.png)
 ![CUF](images/configure-ufw-firewall1.png)
-![CUF](images/comfigure-ufw-firewall2.png)
-![CUF](images/comfigure-ufw-firewall3.png)
 ![SSH](images/enable-ssh1.png)
 ![USER](images/create-a-new-user1.png)
 ![BOOK](images/book1.png)
@@ -297,8 +295,7 @@ Create ten File :
 sudo touch /home/shared/file{1..10}  
 Set Permissions :
 sudo chmod 750 /home/shared  
-Verify Access as Each User and Delete mallory from group
-  
+Verify Access as Each User and Delete mallory from group  
 Clean up :
 sudo rm -r /home/shared  
 
@@ -316,3 +313,37 @@ sudo rm -r /home/shared
 ![FP](images/file-permission.png)
 ![D](images/delete.png)
 ![C](images/clean.png)
+  
+# Lab 1b : Linux Searching Files
+1.Creating files  
+mkdir lab1b  
+cd lab1b  
+  
+2.Create 3 files in lab1b  
+touch file.txt file1.txt notes.log  
+  
+3.pipe text into files  
+echo "Hello" -> file.txt  
+echo "Lab 1b" -> file1.txt  
+echo "Shaohui" -> notes.log  
+  
+4.Find files with -name  
+find . -name "file.txt"  
+find . -name "*.txt"  
+find . -type d  
+  
+5.Test what inside of the files  
+grep "Lab" file1.txt  
+grep -i "LAB" file1.txt  
+grep "Hello" *  
+grep -r "Shaohui"  
+  
+6.Combitionation uses of grep and find  
+find . -name "*.txt" -exec grep "Lab" {} \;
+  
+**Screenshots**
+![SF](images/searching-files1.png)
+![SF](images/searching-files2.png)
+![SF](images/searching-files3.png)
+![SF](images/searching-files4.png)
+![SF](images/searching-files5.png)
