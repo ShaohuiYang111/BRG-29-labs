@@ -381,4 +381,46 @@ Scanner quality
 ![TCO](images/TCO1.png)
 ![TCO](images/TCO2.png)
 ![TCO](images/TCO3.png)
-
+  
+## Lab 2b : AWS Ubuntu Apache CLI
+1.EC2 Instance configuration  
+Region : Asia Pacific  
+AMI : Ubuntu 24.04 LTS  
+Instance type : t3.micro (Free tier)  
+Security group : apache-sg  
+SSH (22) - source 0.0.0.0/0  
+HTTP (80) - source 0.0.0.0/0  
+  
+2.Instance Running And Public IP  
+Public IPv4 address : 54.206.196.14  
+Instance state : Running  
+  
+3.Connect via EC2 Instance Connect (browser-based terminal)  
+Used AWS console's built-in terminal  
+  
+4.Install Apache  
+sudo apt update  
+sudo apt install apache2 -y  
+sudo systemctl start apache2  
+sudo systemctl enable apache2  
+systemctl status apache2  
+  
+5.Test web access
+Open browser : http://54.206.196.14  
+  
+6.Stop Instance  
+After completing the lab,the instance was stopped to no more charges  
+  
+REFLECTION:  
+The EC2 instance connect feature simplifies SSH access without key management  
+Always stop instances after lab work  
+Securitu groups must allow HTTP (port 80) for public web access  
+  
+**Screenshots**
+![AWS](images/AWS7.png)
+![AWS](images/AWS6.png)
+![AWS](images/AWS1.png)
+![AWS](images/AWS2.png)
+![AWS](images/AWS3.png)
+![AWS](images/AWS4.png)
+![AWS](images/AWS5.png)
