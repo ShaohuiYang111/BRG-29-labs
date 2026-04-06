@@ -593,3 +593,43 @@ tail /home/ubuntu/cron_backup.log
 **Screenshots：**
 ![S](images/server1.png)
 ![S](images/server2.png)
+
+Challenge 1 : Boot-Time Script
+@reboot added to crontab.
+Challenge 2 : neofetch & figlet MOTD
+Login greeting customized.
+**Screenshots:**
+![C](images/challenge1.png)
+![C](images/challenge2.png)
+![C](images/challenge3.png)
+![C](images/challenge4.png)
+
+## Lab 4 : Additional Service (Docker)
+1.Install Docker
+sudo apt update
+sudo apt install docker.io -y
+2.Start and Enable Docker
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo systemctl status docker
+3.Add User to Docker Group
+sudo usermod -aG docker $USER
+newgrp docker
+4.Test with Hello-World Container
+docker run hello-world
+5.Run an Nginx Web Server Container
+docker run -d --name mynginx -p 8080:80 nginx
+Open port 8080 in AWS Security Group (Custom TCP, port 8080, source 0.0.0.0/0).
+Then access http://<public-ip>:8080
+6.Basic Container Management
+docker ps
+docker logs mynginx
+docker stop mynginx
+docker rm mynginx
+**Screenshots:**
+![D](images/docker1.png)
+![D](images/docker2.png)
+![D](images/docker3.png)
+![D](images/docker4.png)
+![D](images/docker5.png)
+![D](images/docker6.png)
