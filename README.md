@@ -426,31 +426,31 @@ Securitu groups must allow HTTP (port 80) for public web access
 ![AWS](images/AWS5.png)
 
 ## Lab 2b ： Bash Scripting
-1. File System Operations
-All commands were executed in the AWS EC2 instance (Ubuntu 24.04).
-mkdir LabFiles
-cd LabFiles
-touch notes.txt
-echo "This is a note" > notes.txt
-cat notes.txt
-cp notes.txt notes_backup.txt
-mv notes_backup.txt old_notes.txt
-rm old_notes.txt
-cd ..
-ls -l
-2. Basic Bash Script
-nano hello_Shaohui.sh
-Make executable and run:
-chmod 777 hello_Shaohui.sh
-./hello_Shaohui.sh
-3.Loop and Conditional Script
-nano system_info.sh
-Input 3 20 -1
-4.System Monitoring Script
-nano resource_monitor.sh
-chmod 777 resource_monitor.sh
-./resource_monitor.sh
-
+1.File System Operations  
+All commands were executed in the AWS EC2 instance (Ubuntu 24.04).  
+mkdir LabFiles  
+cd LabFiles  
+touch notes.txt  
+echo "This is a note" > notes.txt  
+cat notes.txt  
+cp notes.txt notes_backup.txt  
+mv notes_backup.txt old_notes.txt  
+rm old_notes.txt  
+cd ..  
+ls -l  
+2.Basic Bash Script  
+nano hello_Shaohui.sh  
+Make executable and run:  
+chmod 777 hello_Shaohui.sh  
+./hello_Shaohui.sh  
+3.Loop and Conditional Script  
+nano system_info.sh  
+Input 3 20 -1  
+4.System Monitoring Script  
+nano resource_monitor.sh  
+chmod 777 resource_monitor.sh  
+./resource_monitor.sh  
+  
 REFLECTION:
 1. What command did you use to create a new directory?
 mkdir LabFiles
@@ -474,6 +474,6 @@ It shows the system’s memory (RAM) and swap usage in human-readable format (e.
 ![BBS](images/basic-bash-scrip2.png)
 ![L](images/loop1.png)
 ![L](images/loop2.png)
-![M](images/moitoring1.png)
-![M](images/moitoring2.png)
-![M](images/moitoring3.png)
+![M](images/monitoring1.png)
+![M](images/monitoring2.png)
+![M](images/monitoring3.png)
