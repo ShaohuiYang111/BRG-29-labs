@@ -22,15 +22,15 @@ Completed installation and system configuration.
 
 labs:
 
-#1.Check internet using Firefox.  
+# 1.Check internet using Firefox.  
   
-#2.Open LibreOffice and type a document.  
+# 2.Open LibreOffice and type a document.  
   
-#3.Open files.  
+# 3.Open files.  
   
-#4.Install a Software in APP center.  
+# 4.Install a Software in APP center.  
   
-#5.Practice basic commands.  
+# 5.Practice basic commands.  
   
 pwd  
 ls /  
@@ -48,7 +48,7 @@ cd ..
 ![software centre](images/software-centre.png)
 ![basic commands](images/basic-commands.png)
   
-#6.Basic commands 2:   
+# 6.Basic commands 2:   
   
 ps-e : List all running processes onr the system  
 top : Dispaly real time process resource usage  
@@ -61,7 +61,7 @@ ls -alt : List files sorted by modification time
 ![bc](images/basic-commands2.png)
 ![bc](images/basic-commands3.png)
   
-#7.File Operations:  
+# 7.File Operations:  
   
 touch testfile.txt : Create an empty file  
 nano testfile.txt : Open the file  
@@ -76,7 +76,7 @@ rm moved.txt : Delete the file
 ![FO](images/file-operation2.png)
 ![FO](images/file-operation3.png)
   
-#8.System Information  
+# 8.System Information  
   
 uname -a : Dispaly kernel version,hostname,OS,etc.  
 lsb_release -a : Show Linux distribution information  
@@ -86,7 +86,7 @@ hostnamectl : Display system hostname and related details
 ![SI](images/system-information1.png)
 ![SI](images/system-information2.png)
   
-#9.User Permission
+# 9.User Permission
   
 whoami : Show the Currently loggen in name  
 sudo whoami : Execute 'whoami' as superuser  
@@ -96,7 +96,7 @@ sudo adduser testuser : Create a new user named 'testuser'
 ![UP](images/user-permission1.png)
 ![UP](images/user-permission2.png)
   
-#10.Network Configuration
+# 10.Network Configuration
   
 ip a : Show all network interfaces and their IP addressed (private IPs)  
 ping -c 4 8.8.8.8 : Send 4 ICMP packets to google DNS to test conectivity  
@@ -108,7 +108,7 @@ ping -c 4 8.8.8.8 : Send 4 ICMP packets to google DNS to test conectivity
 **Ubuntu network settings window:**
 ![NC](images/network-configuration3.png)
   
-#11.Modifying/etc/hosts
+# 11.Modifying/etc/hosts
   
 sudo nano /etc/hosts : Edit the hosts file  
 ping -c 2 mytestalias : Test if the alias resolves to 127.0.0.1  
@@ -117,7 +117,7 @@ ping -c 2 mytestalias : Test if the alias resolves to 127.0.0.1
 ![M](images/modify-etc,hosts1.png)
 ![M](images/modify-etc,hosts2.png)
   
-#12.DNS Query
+# 12.DNS Query
   
 nslookup google.com : Query DNS records for google.com  
 sudo apt install whois -y: Install the whois tool  
@@ -128,7 +128,7 @@ whois google.com | head -20 : Query domain registration infomations (first 20 li
 ![DNS](images/dns-query2.png)
 ![DNS](images/dns-query3.png)
   
-#13.Public IP vs Private IP
+# 13.Public IP vs Private IP
 ip a : Dispaly Private IP address  
 Explanation: Private IPs are used only within loal networks and cannot be routed on the internet.Public IPs are globally unique and identify a device on the internet.  
   
@@ -138,7 +138,7 @@ Explanation: Private IPs are used only within loal networks and cannot be routed
 **Public IP (open https://whatismyipaddress.com/ in Firefox):**
 ![PI](images/public-ipVSprivate-ip2.png)
   
-#14.Hard ware Information
+# 14.Hard ware Information
 lsusb : List USB devices  
 lspci : list PCI devices  
 less /proc/cpuinfo : View CPU details page by page  
@@ -151,7 +151,7 @@ less /proc/cpuinfo : View CPU details page by page
 **Settings-About:**
 ![HWI](images/HW-information4.png)
   
-#15.Output Redirection
+# 15.Output Redirection
 lsusb > output_of_lsusb : Redirect output of 'lsusb' to a file  
 cat output_of_lsub : Display the file conte  
 less output_of_lsusb : View the file page by page  
@@ -160,7 +160,7 @@ rm output_of_lsusb : Delete the file
 **Outputs is shown in the screenshot below:**
 ![OR](images/output-redirection1.png)
   
-#16.Software Installation Methods
+# 16.Software Installation Methods
 *SaaS* : Access Google Docs
 ![SIM](images/SW-installation-method1.png)
   
@@ -176,7 +176,7 @@ Open App center and install Steam
 ![SIM](images/SM-installation-method4.png)
 ![SIM](images/SM-installation-method5.png)
   
-#17.APT Commands
+# 17.APT Commands
 sudo apt update : Update package list from repositories  
 sudo apt upgrade -y : Upgrade all installed packages  
 sudo apt install vlc -y : Install VLC media player  
@@ -186,9 +186,9 @@ less /etc/apt/sources.list : View APT repository configuration
 ![APT](images/APT-commands1.png)
 ![APT](images/APT-commands2.png)
   
-#18.Compiling a C Program
+# 18.Compiling a C Program
 Source code : hello_world.c:
-#include <stdio.h>
+# include <stdio.h>
 int main(){
 printf("Hello,World!\n");
 return 0;
@@ -211,52 +211,52 @@ Answer : SaaS requires no installation but depends on internet.Binaries are easy
 Answer : CLI gave me direct interaction with the kernel,taught me about file permissions,process management,pipelines,and made me more efficient than GUI.  
 
 ## Lab 1b : Lixux Services
-#Update package list : sudo apt update
+# Update package list : sudo apt update
   
-#Install apache : sudo install apaches2 -y
+# Install apache : sudo install apaches2 -y
   
-#Tested on web Http : 127.0.0.1
+# Tested on web Http : 127.0.0.1
   
-#Install SSH and Nmap : sudo apt install openssh-servernmap -y
+# Install SSH and Nmap : sudo apt install openssh-servernmap -y
   
-#Get IP Address : ip a
+# Get IP Address : ip a
   
-#Nmap port Scan : nmap 127.0.0.1 
+# Nmap port Scan : nmap 127.0.0.1 
 Port 80(http) and 22(SSH) are open 
   
-#Stop and remove Apache to see port 80 disappear : sudo systemctl stop apache2 then sudo apt remove apache2 -y
-#Scan again : nmap 127.0.0.1
+# Stop and remove Apache to see port 80 disappear : sudo systemctl stop apache2 then sudo apt remove apache2 -y
+# Scan again : nmap 127.0.0.1
 Port 80 is gone
-#Reinstall Apache : sudo apt insatll apache2 -y
+# Reinstall Apache : sudo apt insatll apache2 -y
   
-#Modify index.html Page
+# Modify index.html Page
 sudo nano /var/www/hetl/index.hetm
   
 Replace content
   
 save content and then refresh browser at http://127.0.0.1
   
-#Enabled firwall allowing http ports 80 : sudo ufw enable and sudo ufw allow 80
+# Enabled firwall allowing http ports 80 : sudo ufw enable and sudo ufw allow 80
   
-#Test SSH login to localhost : ssh lcalhost
+# Test SSH login to localhost : ssh lcalhost
   
-#Creat a new user : sudo addsuer testuser2
+# Creat a new user : sudo addsuer testuser2
   
-#Creat a directory and download a sample book from Project Gutenberg :
+# Creat a directory and download a sample book from Project Gutenberg :
   
 mkdir books  
 cd books  
 wget https://www.gutenberg.org/files/84/84-0.txt -O frankenstein.txt  
 cd ..  
-#Create a tar archive : 
+# Create a tar archive : 
   
 tar cf books.tar books  
 ls -lh boks.tar  
-#Compress the tar archive with bzip2 : 
+# Compress the tar archive with bzip2 : 
   
 bzip2 books.tar  
 ls -ls book.tar.bz2  
-#Decompress: first bunzip2, then extract tar : 
+# Decompress: first bunzip2, then extract tar : 
   
 bunzip2 books.tar.bz2  
 tar -xvf books.tar  
@@ -279,3 +279,39 @@ tar -xvf books.tar
 ![BOOK](images/book1.png)
 ![BOOK](images/book2.png)
 ![LIST](images/LS.png)
+  
+## Labs 1b : Linux Permissions
+  
+# Create users with default home directories
+sduo adduser alice  
+sudo adduser bob  
+sudo adduser mallory  
+# Create group, add alice and bob to the group, Then Verify it
+sudo groupadd sharedgroup  
+sudo usermod -aG sharedgroup alice  
+sudo usermod -aG sharedgroup bob  
+grep sharedgroup /etc/group  
+# Create shared directory
+sudo mkdir /home/shared  
+# Create ten File
+sudo touch /home/shared/file{1..10}  
+# Set Permissions
+sudo chmod 750 /home/shared  
+# Verify Access as Each User and Delete mallory from group
+  
+# Clean up
+  
+**Screenshots:**
+![NU](images/new-user1.png)
+![NU](images/new-user2.png)
+![NU](images/new-user3.png)
+![S](images/sharegroup1.png)
+![S](images/sharegroup2.png)
+![D](images/diretory1.png)
+![T](iamges/touch.png)
+![UT](images/user-test1.png)
+![UT](images/user-test2.png)
+![UT](images/user-test3.png)
+![FP](images/file-permission.png)
+![D](images/delete.png)
+![C](images/clean.png)
