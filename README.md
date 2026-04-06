@@ -546,3 +546,39 @@ Potential security vulnerabilities if not updated
 Wasted credits (if using student credits)
   
 Incurred debt if credit expires
+
+## Lab 3b : Server Automation
+1. Created the following structure inside /home/ubuntu/Documents:
+text
+Documents/
+├── file1.txt
+├── file2.txt
+└── subdir/
+    └── file3.txt
+2.Basic Script Working
+Initial script (/home/ubuntu/testscript) performing recursive copy and zip.
+Script content:
+#!/bin/bash
+now=$(date +"%d_%m_%y")
+mkdir -p /home/ubuntu/backup
+cp -R /home/ubuntu/Documents/* /home/ubuntu/backup/
+cd /home/ubuntu || exit
+zip -r "${now}.zip" backup
+cp "${now}.zip" /home/ubuntu/
+echo "Backup completed: ${now}.zip"
+Execute permission granted and tested:
+chmod 777 /home/ubuntu/testscript
+/home/ubuntu/testscript
+3.Script Moved to /usr/bin and Tested
+sudo mv /home/ubuntu/testscript /usr/bin/testscript
+testscript
+4.ZIP Archive with Date Filename
+5. Cronjob Set Up for Hourly Backup
+Crontab entry added to run the script every hour:
+0 * * * * /usr/bin/testscript >> /home/ubuntu/cron_backup.log 2>&1
+Verify with:
+crontab -l
+6.Successful Cron Execution Verified
+ls -lh /home/ubuntu/*.zip
+tail /home/ubuntu/cron_backup.log
+**Screenshots：**
