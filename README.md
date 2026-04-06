@@ -361,8 +361,8 @@ Weekly print volume : 750 pages
 Electricity rate : 0.29 SGD/kWh  
 Paper cost (500 sheets) : 5.40 SGD  
 Weeks per year : 52  
-**Total pages printed : 195,000 pages **  
-**Total operating hours : 10,400 hours **  
+**Total pages printed : 195,000 pages**  
+**Total operating hours : 10,400 hours**  
 3.Reflection  
 3.1 Which printer has lower tco and why?  
 Epson EcoTank L6279 - mainly because ink bottles are much cheaper per page than laser toner(SGD 0.0213 vs 0.0243 per page). Even though it may need repalcement during the period, its running costs are lower.  
