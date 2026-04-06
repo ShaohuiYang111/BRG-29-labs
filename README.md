@@ -473,7 +473,78 @@ It shows the system’s memory (RAM) and swap usage in human-readable format (e.
 ![BBS](images/basic-bash-scrip1.png)
 ![BBS](images/basic-bash-scrip2.png)
 ![L](images/loop1.png)
+
+
 ![L](images/loop2.png)
 ![M](images/monitoring1.png)
 ![M](images/monitoring2.png)
 ![M](images/monitoring3.png)
+
+## Lab 3a : Domain, DNS and TLS Certificates
+1.  Launch EC2 Instance and Configure Security Group
+nbound rules (allowing SSH, HTTP, HTTPS):
+SSH (22) – source `0.0.0.0/0`
+HTTP (80) – source `0.0.0.0/0`
+HTTPS (443) – source `0.0.0.0/0`
+
+2. Install Apache
+sudo systemctl start apache2
+sudo systemctl enable apache2
+sudo systemctl status apache2
+
+3. Register Free Domain (DuckDNS)
+Registered shaohuilabs.duckdns.org at duckdns.org
+Set A record to point to EC2 public IP: 3.26.43.158
+
+4. Verify DNS Resolution
+nslookup shaohuilabs.duckdns.org
+
+5. Install Certbot and Obtain TLS Certificate
+sudo apt install certbot python3-certbot-apache -y
+sudo certbot --apache -d shaohuilabs.duckdns.org
+
+6. Test HTTPS Access
+Open browser and visit https://shaohuilabs.duckdns.org
+
+7. Test Automatic Renewal (Dry Run)
+sudo certbot renew --dry-run
+
+**Screenshots:**
+![DNS](images/DNS2.png)
+![DNS](images/DNS3.png)
+![DNS](images/DNS1.png)
+![DNS](images/DNS4.png)
+![DNS](images/DNS5.png)
+![DNS](images/DNS6.png)
+![DNS](images/DNS7.png)
+![DNS](images/DNS8.png)
+
+REFLECTION:
+1. What is the role of DNS in Internet presence?
+DNS translates human-readable domain names (e.g., shaohuilabs.duckdns.org) into machine-readable IP addresses, allowing users to access services without memorizing numbers.
+
+2. Why does DNS propagation take time?
+DNS changes are cached by resolvers and ISPs. The TTL (Time To Live) value determines how long old records are kept. Propagation can take minutes to hours.
+
+3. How does Let's Encrypt validate domain ownership?
+Let's Encrypt uses HTTP-01 challenge (placing a temporary file on the web server) or DNS-01 challenge (adding a TXT record). In this lab, HTTP-01 was used – Certbot created a file under /.well-known/acme-challenge/ and Let's Encrypt fetched it over port 80.
+
+4. What are the risks if TLS is not configured on a public-facing site?
+Data transmitted in plaintext (eavesdropping)
+
+Man-in-the-middle attacks
+
+Browser warnings ("Not Secure")
+
+Poor SEO ranking
+
+Loss of user trust
+
+5. What could happen if you leave your cloud VM running for months?
+Accumulated charges (even t2.micro costs about $8-10/month)
+
+Potential security vulnerabilities if not updated
+
+Wasted credits (if using student credits)
+
+Incurred debt if credit expires
