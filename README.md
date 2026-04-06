@@ -424,3 +424,56 @@ Securitu groups must allow HTTP (port 80) for public web access
 ![AWS](images/AWS3.png)
 ![AWS](images/AWS4.png)
 ![AWS](images/AWS5.png)
+
+## Lab 2b ： Bash Scripting
+1. File System Operations
+All commands were executed in the AWS EC2 instance (Ubuntu 24.04).
+mkdir LabFiles
+cd LabFiles
+touch notes.txt
+echo "This is a note" > notes.txt
+cat notes.txt
+cp notes.txt notes_backup.txt
+mv notes_backup.txt old_notes.txt
+rm old_notes.txt
+cd ..
+ls -l
+2. Basic Bash Script
+nano hello_Shaohui.sh
+Make executable and run:
+chmod 777 hello_Shaohui.sh
+./hello_Shaohui.sh
+3.Loop and Conditional Script
+nano system_info.sh
+Input 3 20 -1
+4.System Monitoring Script
+nano resource_monitor.sh
+chmod 777 resource_monitor.sh
+./resource_monitor.sh
+
+REFLECTION:
+1. What command did you use to create a new directory?
+mkdir LabFiles
+
+2. How can you view the contents of a file without opening it in a GUI?
+Use terminal commands such as cat, less, head, tail, or nano/vim (text-based editors).
+
+3. What is the purpose of chmod 777?
+It gives read, write, and execute permissions to all users (owner, group, others). This is very permissive and should be used cautiously, but for lab scripts it ensures the script can be run by anyone.
+
+4. What does #!/bin/bash do at the start of a script?
+It is a shebang line that tells the system to use the Bash interpreter located at /bin/bash to execute the script.
+
+5. What happens when invalid input is entered into a script?
+It depends on how the script is written. If no validation is implemented, the script may behave unpredictably (e.g., compare an empty string with a number, causing an error). In our system_info.sh script, invalid input (e.g., a letter) would cause the numeric comparison to fail and might produce an error message. Good scripts include input validation to handle such cases gracefully.
+
+6. What output does free -h show?
+It shows the system’s memory (RAM) and swap usage in human-readable format (e.g., KiB, MiB, GiB), including total, used, free, shared, buff/cache, and available memory.
+![F](images/file1.png)
+![BBS](images/basic-bash-scrip1.png)
+![BBS](images/basic-bash-scrip2.png)
+![L](images/loop1.png)
+![L](images/loop2.png)
+![M](images/moitoring1.png)
+![M](images/moitoring2.png)
+![M](images/moitoring3.png)
