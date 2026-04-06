@@ -347,3 +347,38 @@ find . -name "*.txt" -exec grep "Lab" {} \;
 ![SF](images/searching-files3.png)
 ![SF](images/searching-files4.png)
 ![SF](images/searching-files5.png)
+  
+# Lab 2a: Total cost of Ownership (TCO)
+1.Overview  
+This report compares the **Total Cost of Ownership (TCO)** of two printers over 5 years, based on a typical office printing load.
+  
+Printer A : HP LaserJet MFP M42523dn  
+Printer B : Epson Ecotan L6279  
+  
+2.Common Assumputions  
+Time period for 5 years  
+Weekly print volume : 750 pages  
+Electricity rate : 0.29 SGD/kWh  
+Paper cost (500 sheets) : 5.40 SGD  
+Weeks per year : 52  
+**Total pages printed : 195,000 pages **  
+**Total operating hours : 10,400 hours **  
+3.Reflection  
+3.1 Which printer has lower tco and why?  
+Epson EcoTank L6279 - mainly because ink bottles are much cheaper per page than laser toner(SGD 0.0213 vs 0.0243 per page). Even though it may need repalcement during the period, its running costs are lower.  
+  
+3.2 Would the answer chanfe for a home user printing only 5 pages/week?  
+Yes. At 5 pages/week, total pages over 5 years = 1,300. Both printers would have very low consumable usage, so the initial purchase price becomes dominant. The HP laser would be more expensive (764 vs 439 SGD), but ink may dry out in the Epson if used rarely. A cheap black and white laser might be best.  
+  
+3.3 Other non-financial fators to consider?  
+Colour printing (Epson does colour, HP is mono)  
+Print speed (HP are faster)  
+Wireless/ mobile printing (Epson supports Wi-Fi)  
+Duplex (both support)  
+Scanner quality  
+  
+**Screenshots:**
+![TCO](images/TCO1.png)
+![TCO](images/TCO2.png)
+![TCO](images/TCO3.png)
+
