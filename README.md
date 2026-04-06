@@ -469,12 +469,11 @@ It depends on how the script is written. If no validation is implemented, the sc
 
 6. What output does free -h show?
 It shows the system’s memory (RAM) and swap usage in human-readable format (e.g., KiB, MiB, GiB), including total, used, free, shared, buff/cache, and available memory.
+**Screenshots:**
 ![F](images/file1.png)
 ![BBS](images/basic-bash-scrip1.png)
 ![BBS](images/basic-bash-scrip2.png)
 ![L](images/loop1.png)
-
-
 ![L](images/loop2.png)
 ![M](images/monitoring1.png)
 ![M](images/monitoring2.png)
@@ -531,20 +530,19 @@ Let's Encrypt uses HTTP-01 challenge (placing a temporary file on the web server
 
 4. What are the risks if TLS is not configured on a public-facing site?
 Data transmitted in plaintext (eavesdropping)
-
 Man-in-the-middle attacks
-
+  
 Browser warnings ("Not Secure")
-
+  
 Poor SEO ranking
-
+  
 Loss of user trust
-
+  
 5. What could happen if you leave your cloud VM running for months?
 Accumulated charges (even t2.micro costs about $8-10/month)
-
+  
 Potential security vulnerabilities if not updated
-
+  
 Wasted credits (if using student credits)
-
+  
 Incurred debt if credit expires
