@@ -261,7 +261,7 @@ ls -ls book.tar.bz2
 bunzip2 books.tar.bz2  
 tar -xvf books.tar  
 
-**Screenshots:**
+**Screenshots:**  
 ![A](images/install-apache1.png)
 ![A](images/install-apache2.png)
 ![SSH](images/install-ssh.png)
@@ -300,8 +300,9 @@ sudo chmod 750 /home/shared
 # Verify Access as Each User and Delete mallory from group
   
 # Clean up
-  
-**Screenshots:**
+sudo rm -r /home/shared  
+
+**Screenshots:**  
 ![NU](images/new-user1.png)
 ![NU](images/new-user2.png)
 ![NU](images/new-user3.png)
