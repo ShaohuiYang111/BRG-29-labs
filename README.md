@@ -169,7 +169,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb :
 sudo dpkg -i google0chrome-stable_current_amd64/deb : Install the .deb package  
 sudo apt-get install -f : Fix any missing dependencies  
 ![SIM](images/SW-installation-method2.png)
-![SIM](images/SW-installation-mothod3.png)
+![SIM](images/P3.png)
   
 *Software centre installation*
 Open App center and install Steam
@@ -210,7 +210,7 @@ Answer : SaaS requires no installation but depends on internet.Binaries are easy
 19.3 How did using CLI imporve your understanding of linux?
 Answer : CLI gave me direct interaction with the kernel,taught me about file permissions,process management,pipelines,and made me more efficient than GUI.  
 
-## Lab 1b : Lixux Services
+## Lab 1b : Linux Services
 Update package list : sudo apt update
   
 Install apache : sudo install apaches2 -y
